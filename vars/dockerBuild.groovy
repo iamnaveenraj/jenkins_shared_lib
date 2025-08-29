@@ -1,6 +1,6 @@
 def call(String project, String ImageTag, String hubUser){
     
-    sh """
+    bat """
      docker image build -t ${hubUser}/${project}:latest .
     """
 }
